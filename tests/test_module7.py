@@ -158,8 +158,8 @@ def test_app_review_post_request_check_module7():
     # body_title = title in body
     # assert body_title, "Have you created the `title` variable?"
 
-    body_status = status in body
-    assert body_status, "Have you created the `status` variable?"
+    # body_status = status in body
+    # assert body_status, "Have you created the `status` variable?"
 
     body_date = date in body
     assert body_date, "Have you created the `date` variable?"
