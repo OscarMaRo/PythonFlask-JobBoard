@@ -37,6 +37,7 @@ def close_connection(exception):
         connection.close()
     return connection
 
+
 @app.route('/')
 @app.route('/jobs')
 def jobs():

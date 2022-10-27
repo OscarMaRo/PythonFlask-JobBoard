@@ -111,29 +111,34 @@ def test_app_review_post_request_check_module7():
         "test/ops/node_type" in if_statement
         and "Eq" == if_statement["test/ops/node_type"]
     )
+    
     review = {
-        "targets/id": "review",
-        "value/slice/value/s": "review",
-        "value/value/attr": "form",
-        "value/value/value/id": "request",
+        'targets/id': 'review', 
+        'value/slice/s': 'review', 
+        'value/slice/value': 'review', 
+        'value/value/attr': 'form', 
+        'value/value/value/id': 'request'
     }
     rating = {
-        "targets/id": "rating",
-        "value/slice/value/s": "rating",
-        "value/value/attr": "form",
-        "value/value/value/id": "request",
+        'targets/id': 'rating', 
+        'value/slice/s': 'rating', 
+        'value/slice/value': 'rating', 
+        'value/value/attr': 'form', 
+        'value/value/value/id': 'request'
     }
     title = {
-        "targets/id": "title",
-        "value/slice/value/s": "title",
-        "value/value/attr": "form",
-        "value/value/value/id": "request",
+        'targets/id': 'title', 
+        'value/slice/s': 'title', 
+        'value/slice/value': 'title', 
+        'value/value/attr': 'form', 
+        'value/value/value/id': 'request'
     }
     status = {
-        "targets/id": "status",
-        "value/slice/value/s": "status",
-        "value/value/attr": "form",
-        "value/value/value/id": "request",
+        'targets/id': 'status', 
+        'value/slice/s': 'status', 
+        'value/slice/value': 'status', 
+        'value/value/attr': 'form', 
+        'value/value/value/id': 'request'
     }
     date = {
         "targets/id": "date",
@@ -150,6 +155,7 @@ def test_app_review_post_request_check_module7():
     ), 'Do you have an `if` statement to test if the request method equals "POST?'
 
     body_review = review in body
+    print(body)
     assert body_review, "Have you created the `review` variable?"
 
     body_rating = rating in body
