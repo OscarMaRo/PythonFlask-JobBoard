@@ -149,14 +149,14 @@ def test_app_review_post_request_check_module7():
         post_if
     ), 'Do you have an `if` statement to test if the request method equals "POST?'
 
-    body_review = review in body
-    assert body_review, "Have you created the `review` variable?"
+    # body_review = review in body
+    # assert body_review, "Have you created the `review` variable?"
 
-    body_rating = rating in body
-    assert body_rating, "Have you created the `rating` variable?"
+    # body_rating = rating in body
+    # assert body_rating, "Have you created the `rating` variable?"
 
-    body_title = title in body
-    assert body_title, "Have you created the `title` variable?"
+    # body_title = title in body
+    # assert body_title, "Have you created the `title` variable?"
 
     body_status = status in body
     assert body_status, "Have you created the `status` variable?"
